@@ -23,8 +23,9 @@ public class PresentationV2 {
             IMetier metier =(IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
 
             //metier.setDao(d); via le setter
-            Method setDao =cMetier.getDeclaredMethod("setDao",IDao.class);
+            /*Method setDao =cMetier.getDeclaredMethod("setDao",IDao.class);
             setDao.invoke(metier,dao);
+            */
 
             System.out.println("Res = " + metier.calcul());
 
