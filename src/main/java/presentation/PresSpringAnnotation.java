@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class PresSpringAnnotation {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext("dao","metier");
+        ApplicationContext context = new AnnotationConfigApplicationContext("ext","metier");
         IMetier metier = context.getBean(IMetier.class);
         System.out.println("RES = " +metier.calcul());
 
